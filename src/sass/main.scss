@@ -1,0 +1,52 @@
+@use 'colors' as *;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: $Light-gray;
+	font-family: 'Outfit', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	height: 100vh;
+	font-size: 15px;
+	overflow: hidden;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+.card {
+	padding: 20px;
+	background-color: $White;
+	text-align: center;
+	border-radius: 17px;
+	img {
+		margin-bottom: 15px;
+		max-width: 100%;
+		border-radius: 17px;
+	}
+	&__heading-text {
+		font-weight: 700;
+		font-size: 21px;
+		margin-bottom: 10px;
+		color: $Dark-blue;
+	}
+	&__text {
+		margin-bottom: 10px;
+		color: $Grayish-blue;
+	}
+	
+}
+@media (min-width: 500px) {
+	.card {
+		width: 400px;
+	}
+}
